@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Forum.Data.Models
 {
-    class Forum
+    public class Forum
     {
         public int Id { set; get; }
         public string Title { set; get; }
@@ -12,6 +12,7 @@ namespace Forum.Data.Models
         public DateTime Created { set; get; }
         public string ImageUrl { set; get; }
         public virtual IEnumerable<Post> Posts { set; get; }
-        public virtual Forum Forum { set; get; }
+        public virtual Forum forum { set; get; }
+        public virtual IEnumerable<PostReply> Replies { set; get; }
     }
 }

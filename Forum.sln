@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forum", "Forum\Forum.csproj", "{0BF2E11A-4973-4610-8AB2-E2D12B59788C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Forum", "Forum\Forum.csproj", "{0BF2E11A-4973-4610-8AB2-E2D12B59788C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forum.Data", "Forum.Data\Forum.Data.csproj", "{7997D942-396D-4881-8BD2-12154C442C1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Forum.Data", "Forum.Data\Forum.Data.csproj", "{7997D942-396D-4881-8BD2-12154C442C1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{20AA28BD-91CF-4928-8EBF-D19FC5579B9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7997D942-396D-4881-8BD2-12154C442C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7997D942-396D-4881-8BD2-12154C442C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7997D942-396D-4881-8BD2-12154C442C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20AA28BD-91CF-4928-8EBF-D19FC5579B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20AA28BD-91CF-4928-8EBF-D19FC5579B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20AA28BD-91CF-4928-8EBF-D19FC5579B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20AA28BD-91CF-4928-8EBF-D19FC5579B9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Forum.Data.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +13,10 @@ namespace Forum.Data
             : base(options)
         {
         }
+        public DbSet<ApplicationUser> ApplicationUsers { set; get; }
+        public DbSet<Models.Forum> Forums { set; get; }
+        public DbSet<Post> Posts { set; get; }
+        public DbSet<PostReply> PostReplies { set; get; }
     }
-    public DbSet<ApplicationUser> ApplicationUsers { set; get; }
+
 }
