@@ -12,7 +12,6 @@ namespace Forum.Data.Models
         public DateTime Created { set; get; }
         public string ImageUrl { set; get; }
         public virtual IEnumerable<Post> Posts { set; get; }
-        public virtual Forum forum { set; get; }
-        public virtual IEnumerable<PostReply> Replies { set; get; }
+
     }
 }

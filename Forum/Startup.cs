@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Forum.Data;
+using Service;
 
 namespace Forum
 {
@@ -33,6 +34,7 @@ namespace Forum
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
             //services.AddTransient<IEmail;
+            services.AddScoped<IForum, ForumServices>();
             services.AddMvc(options => options.EnableEndpointRouting=false);
         } 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
